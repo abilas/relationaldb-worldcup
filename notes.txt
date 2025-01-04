@@ -1,0 +1,14 @@
+Database = world cup
+
+Table - 'teams'
+  team_id (serial, PK)
+  name (varchar(60), unique)
+
+Table - 'games'
+  game_id (serial, PK)
+  year (int)
+  winner_id (int, FK)
+  opponent_id (int, FK)
+  winner_goals (int)
+  opponent_goals (int)
+  round (varchar(60))
